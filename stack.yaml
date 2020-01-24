@@ -1,0 +1,10 @@
+resolver: lts-14.21
+packages:
+  - hello-world
+extra-deps:
+  - git: git@github.com:tricycle/aws-api-gateway.git
+    commit: 2b7773920b041da74ba11fcdc08e678b812160a6
+  - relude-0.6.0.0@sha256:094ad587b28fa8dcc78fd0fba8927b970e5e4a9bb10a3126c0ca32a7ee61f3ca,8681
+docker:
+  enable: true
+  image: unisay/aws-lambda-haskell

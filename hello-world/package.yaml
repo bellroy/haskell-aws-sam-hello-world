@@ -1,0 +1,28 @@
+name: sam-haskell-hello-world
+version: "0.1.0.0"
+category: "demo"
+author: "Bellroy"
+maintainer: geeks@bellroy.com
+copyright: "Bellroy"
+github: "tricycle/sam-haskell-hello-world"
+license: NONE
+
+defaults:
+  local: hpack-defaults.yaml
+
+executables:
+  hello-world:
+    main: Main.hs
+    source-dirs:
+      - src
+    dependencies:
+      - aeson
+      - aws-api-gateway
+      - aws-lambda-haskell-runtime
+      - base-noprelude
+      - http-types
+      - lens
+      - relude
+      - text
+    ghc-options:
+      - -O2
